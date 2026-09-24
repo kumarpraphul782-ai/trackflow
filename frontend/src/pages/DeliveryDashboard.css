@@ -1,0 +1,359 @@
+.delivery-dashboard {
+  padding: 30px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+.delivery-dashboard h1 {
+  color: #172033;
+  margin-bottom: 30px;
+}
+
+.delivery-section {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.delivery-section h2 {
+  color: #172033;
+  margin-bottom: 20px;
+}
+
+.delivery-card {
+  border: 1px solid #e3e7ef;
+  border-radius: 14px;
+  padding: 20px;
+  margin-top: 15px;
+  background: #ffffff;
+  transition: 0.2s ease;
+}
+
+.delivery-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.delivery-tracking {
+  font-size: 19px;
+  font-weight: 700;
+  color: #1d4ed8;
+  margin-bottom: 15px;
+}
+
+.delivery-route {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.delivery-route span {
+  color: #64748b;
+}
+
+.delivery-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.delivery-info p {
+  margin: 0;
+  color: #475569;
+}
+
+.delivery-info strong {
+  color: #172033;
+}
+
+.delivery-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.delivery-status-select {
+  padding: 9px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.delivery-complete-btn {
+  padding: 9px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.delivery-complete-btn:hover {
+  background: #1d4ed8;
+}
+
+.delivery-complete-btn:disabled {
+  background: #22c55e;
+  cursor: not-allowed;
+}
+@media (max-width: 700px) {
+  .delivery-dashboard {
+    padding: 15px;
+  }
+
+  .delivery-section {
+    padding: 16px;
+  }
+
+  .delivery-info {
+    grid-template-columns: 1fr;
+  }
+
+  .delivery-route {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .delivery-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .delivery-status-select,
+  .delivery-complete-btn {
+    width: 100%;
+  }
+}
+.delivery-status-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #fff7ed;
+  color: #ea580c;
+  font-size: 13px;
+  font-weight: 600;
+}
+.delivery-accept-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 11px 16px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.delivery-accept-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+.delivery-estimated {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #475569;
+}
+
+.delivery-estimated strong {
+  color: #172033;
+}
+.delivery-otp-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.delivery-otp-box {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+.delivery-otp-box h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #172033;
+}
+
+.delivery-otp-box p {
+  margin: 0 0 20px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.delivery-otp-box input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.delivery-otp-box input:focus {
+  border-color: #2563eb;
+}
+
+.delivery-otp-box button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 11px 16px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delivery-otp-box button:last-child {
+  background: #f1f5f9;
+  color: #475569;
+}
+.delivery-availability-card {
+  margin-bottom: 25px;
+  padding: 20px 22px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.delivery-availability-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.delivery-availability-card h2 {
+  margin: 0;
+  color: #172033;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.delivery-availability-badge {
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.current-delivery-card {
+  margin-bottom: 25px;
+  padding: 20px 22px;
+  background: #f8fafc;
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
+}
+
+.current-delivery-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.current-delivery-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.current-delivery-header h2 {
+  margin: 0;
+  color: #172033;
+  font-size: 18px;
+}
+
+.current-delivery-status {
+  padding: 6px 11px;
+  border-radius: 20px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.current-delivery-route {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding-top: 15px;
+  border-top: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 14px;
+}
+
+.current-delivery-route strong {
+  color: #2563eb;
+}
+.delivery-busy-message {
+  margin-bottom: 25px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  color: #c2410c;
+  font-size: 13px;
+  font-weight: 600;
+}
+/* ============ STORE ORDER DELIVERIES (BLINKIT-STYLE) ============ */
+.store-delivery-store {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.store-delivery-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.store-delivery-head .delivery-tracking {
+  margin: 0;
+}

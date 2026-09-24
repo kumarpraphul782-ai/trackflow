@@ -1,0 +1,30 @@
+{
+  "name": "trackflow-backend",
+  "version": "1.0.0",
+  "description": "TrackFlow API - logistics tracking & store ordering (Express + MongoDB + Socket.io)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "logistics",
+    "shipment",
+    "tracking",
+    "marketplace",
+    "ordering"
+  ],
+  "author": "Praphul Kumar",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.8.0",
+    "nodemailer": "^9.1.1",
+    "socket.io": "^4.8.3"
+  }
+}

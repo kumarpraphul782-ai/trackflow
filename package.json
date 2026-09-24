@@ -1,0 +1,12 @@
+{
+  "name": "trackflow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TrackFlow - logistics tracking + store ordering platform",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "lint": "npm --prefix frontend run lint"
+  }
+}
